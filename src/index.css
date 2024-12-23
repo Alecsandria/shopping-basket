@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  main {
+    @apply bg-slate-100;
+  }
+}
+
+@layer components {
+  .quantityButton {
+    @apply border border-slate-500 rounded-md w-6 h-6 flex items-center justify-center 
+    disabled:bg-slate-300 disabled:text-slate-400 disabled:cursor-not-allowed disabled:border-slate-300;
+  }
+
+  .basketRow {
+    @apply bg-white p-10;
+  }
+}
